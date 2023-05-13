@@ -30,7 +30,7 @@ class ModelTrainer:
                 test_array[:,:-1],
                 test_array[:,-1]
             )
-            classifier_regressor = LogisticRegression('penalty': 'l2','C': 20 ,'max_iter': 100)
+            classifier_regressor = LogisticRegression(penalty= 'l2',C= 20 ,max_iter=100)
             classifier_regressor.fit(X_train,y_train)
             ## prediction 
             y_pred = classifier_regressor.predict(X_test)

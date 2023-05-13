@@ -1,0 +1,40 @@
+[ 2023-05-14 00:33:14,573 ] 27 root - INFO - Data Ingestion Method Starts
+[ 2023-05-14 00:33:14,685 ] 32 root - INFO - Dateset read as pandas Dataframe
+[ 2023-05-14 00:33:14,768 ] 35 root - INFO - Remove White Space in Data set
+[ 2023-05-14 00:33:14,911 ] 37 root - INFO - Remove Special Cherater In Dataset
+[ 2023-05-14 00:33:15,031 ] 51 root - INFO - Data Cleaing part is complete
+[ 2023-05-14 00:33:15,230 ] 57 root - INFO - Train Test Split
+[ 2023-05-14 00:33:15,468 ] 62 root - INFO - Ingetion of data is completed
+[ 2023-05-14 00:33:15,624 ] 73 root - INFO - Read train and test data completed
+[ 2023-05-14 00:33:15,633 ] 74 root - INFO - Train Dataframe Head : 
+   Age        Work_class     Education  Education_num      Marital_status       Occupation   Relationship                Race     Sex  Capital_gain  Hours_per_week  Income
+0   32           Private     Bachelors             13       Never married  Exec managerial  Not in family               White    Male             0              40       0
+1   23           Private       HS grad              9       Never married     Craft repair      Own child  Asian Pac Islander    Male             0               1       0
+2   48  Self emp not inc  Some college             10  Married civ spouse     Craft repair        Husband  Amer Indian Eskimo    Male          7688              40       1
+3   56       Federal gov       Masters             14            Divorced     Adm clerical      Unmarried               White  Female             0              40       0
+4   50           Private     Doctorate             16  Married civ spouse   Prof specialty        Husband               White    Male         15024              50       1
+[ 2023-05-14 00:33:15,641 ] 75 root - INFO - Test Dataframe Head  : 
+   Age        Work_class     Education  Education_num      Marital_status         Occupation   Relationship   Race     Sex  Capital_gain  Hours_per_week  Income
+0   27           Private  Some college             10            Divorced       Adm clerical  Not in family  White  Female             0              38       0
+1   45         State gov       HS grad              9  Married civ spouse    Exec managerial           Wife  White  Female             0              40       0
+2   29           Private     Bachelors             13  Married civ spouse    Exec managerial        Husband  Black    Male             0              55       1
+3   30           Private     Bachelors             13       Never married  Machine op inspct  Not in family  White  Female             0              40       0
+4   29  Self emp not inc  Some college             10            Divorced       Craft repair  Not in family  White    Male          2202              50       0
+[ 2023-05-14 00:33:15,641 ] 77 root - INFO - Obtaining preprocessing object
+[ 2023-05-14 00:33:15,641 ] 26 root - INFO - Data Transformation initiated
+[ 2023-05-14 00:33:15,641 ] 32 root - INFO - Pipeline Initiated
+[ 2023-05-14 00:33:15,908 ] 94 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2023-05-14 00:33:15,943 ] 106 root - INFO - Preprocessor pickle file saved
+[ 2023-05-14 00:33:15,947 ] 26 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2023-05-14 00:33:16,727 ] 43 root - INFO - Model Name: Logistic Regression, Accuracy Score: 0.8508394758394758
+[ 2023-05-14 00:33:16,731 ] 47 root - INFO - classification Report:               precision    recall  f1-score   support
+
+         0.0       0.88      0.93      0.90      7410
+         1.0       0.74      0.60      0.66      2358
+
+    accuracy                           0.85      9768
+   macro avg       0.81      0.76      0.78      9768
+weighted avg       0.84      0.85      0.85      9768
+
+[ 2023-05-14 00:33:16,743 ] 52 root - INFO - classification Confusion Metrix: [[6902  949]
+ [ 508 1409]]

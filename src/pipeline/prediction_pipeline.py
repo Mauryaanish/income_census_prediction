@@ -42,8 +42,7 @@ class CustomData:
                  Sex:str,
                  Capital_gain:int,
                  Capital_loss:int,
-                 Hours_per_week:int,
-                 Native_county:str):
+                 Hours_per_week:int):
     
     
         
@@ -60,7 +59,6 @@ class CustomData:
         self.Capital_gain = Capital_gain
         self.Capital_loss = Capital_loss
         self.Hours_per_week = Hours_per_week
-        self.Native_county = Native_county
     
 
     def get_data_as_dataframe(self):
@@ -78,8 +76,7 @@ class CustomData:
                 'sex' :[self.sex],
                 'Capital_gain' : [self.Capital_gain],
                 'Capital_loss' : [self.Capital_loss],
-                'Hours_per_week' : [self.Hours_per_week],
-                'Native_county' : [self.Native_county]
+                'Hours_per_week' : [self.Hours_per_week]
              }
             df = pd.DataFrame(custom_data_input_dict)
             logging.info('Dataframe Gathered')

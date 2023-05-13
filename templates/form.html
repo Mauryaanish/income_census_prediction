@@ -1,0 +1,178 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" placeholder="Enter carat value (int)">
+    </div>
+
+    <div class="form-group">
+        <label for="Work_class">Work_class:</label>
+        <input type="text" id="Work_class" name="Work_class" placeholder="Enter depth value (str)">
+    </div>
+
+    <div class="form-group">  
+        <label for="Final_weight">Final_weight:</label>
+        <input type="text" id="Final_weight" name="Final_weight" placeholder="Enter table value (int)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Education">Education:</label>
+        <input type="text" id="Education" name="Education" placeholder="Enter x value (str)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Education_num">Education_num:</label>
+        <input type="text" id="Education_num" name="Education_num" placeholder="Enter y value (int)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Marital_status">Marital_status:</label>
+        <input type="text" id="Marital_status" name="Marital_status" placeholder="Enter z value (str)">
+    </div>  
+    
+    <div class="form-group">
+        <label for="Occupation">Occupation:</label>
+        <input type="text" id="Occupation" name="Occupation" placeholder="Enter z value (str)">
+    </div> 
+    
+    <div class="form-group">
+        <label for="Relationship">Relationship:</label>
+        <input type="text" id="Relationship" name="Relationship" placeholder="Enter z value (str)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Race">Race:</label>
+        <input type="text" id="Race" name="Race" placeholder="Enter z value (str)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Sex">Sex:</label>
+        <input type="text" id="Sex" name="Sex" placeholder="Enter z value (str)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Capital_gain">Capital_gain:</label>
+        <input type="text" id="Capital_gain" name="Capital_gain" placeholder="Enter z value (int)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Capital_loss">Capital_loss:</label>
+        <input type="text" id="Capital_loss" name="Capital_loss" placeholder="Enter z value (int)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Hours_per_week">Hours_per_week:</label>
+        <input type="text" id="Hours_per_week" name="Hours_per_week" placeholder="Enter z value (int)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Native_county">Native_county:</label>
+        <input type="text" id="Native_county" name="Native_county" placeholder="Enter z value (str)">
+    </div> 
+  
+<div class="form-group">
+  <label for="Work_class">Work_class:</label>
+  <select id="Work_class" name="Work_class">
+    <option value="Private">Private</option>
+    <option value="Self-emp-not-inc">Self-emp-not-inc</option>
+    <option value="Local-gov">Local-gov</option>
+    <option value="State-gov">State-gov</option>
+    <option value="Self-emp-inc">Self-emp-inc</option>
+    <option value="Federal-gov">Federal-gov</option>
+    <option value="Without-pay">Without-pay</option>
+    <option value="Never_worked">Never_worked</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="Education">Education:</label>
+  <select id="Education" name="Education">
+    <option value="HS-grad">HS-grad</option>
+    <option value="Some-collage">Some-collage</option>
+    <option value="Bachelors">Bachelors</option>
+    <option value="Masters">Masters</option>
+    <option value="Assoc-voc">Assoc-voc</option>
+    <option value="11th">11th</option>
+    <option value="Assoc-acdm">Assoc-acdm</option>
+    <option value="10th">10th</option>
+    <option value="7th-8th">7th-8th</option>
+    <option value="Prof-school"><Prof-school</option>
+    <option value="9th">9th</option>
+    <option value="12th">12th</option>
+    <option value="Doctorate">Doctorate</option>
+    <option value="5th-6th">5th-6th</option>
+    <option value="1st-4th">1st-4th</option>
+    <option value="Preschool">Preschool</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Marital_status">Marital_status:</label>
+  <select id="Marital_status" name="Marital_status">
+    <option value="Married-civ-spouse">Married-civ-spouse</option>
+    <option value="Never-married">Never-married</option>
+    <option value="Divorced">Divorced</option>
+    <option value="Separated">Separated</option>
+    <option value="Widowed">Widowed</option>
+    <option value="Married-spouse-absent">Married-spouse-absent</option>
+    <option value="Married-AF-spouse">Married-AF-spouse</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="Occupation">Occupation:</label>
+    <select id="Occupation" name="Occupation">
+      <option value="Prof-specialty">Prof-specialty</option>
+      <option value="Craft-repair">Craft-repair</option>
+      <option value="Exec-managerial">Exec-managerial</option>
+      <option value="Adm-clerical">Adm-clerical</option>
+      <option value="Sales">Sales</option>
+      <option value="Other-service">Other-service</option>
+      <option value="Machine-op-inspct">Machine-op-inspct</option>
+      <option value="Transport-moving">Transport-moving</option>
+      <option value="Handlers-cleaners">Handlers-cleaners</option>
+      <option value="Farming-fishing">Farming-fishing</option>
+      <option value="Tech-support">Tech-support</option>
+      <option value="Protective-serv">Protective-serv</option>
+      <option value="Priv-house-serv">Priv-house-serv</option>
+      <option value="Armed-forces">Armed-forces</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Relationship">Relationship:</label>
+    <select id="Relationship" name="Relationship">
+      <option value="Husband">Husband</option>
+      <option value="Not-in-family">Not-in-family</option>
+      <option value="Own-child">Own-child</option>
+      <option value="Unmarried">Unmarried</option>
+      <option value="Wife">Wife</option>
+      <option value="Other-relative">Other-relative</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Race">Race:</label>
+    <select id="Race" name="Race">
+      <option value="White">White</option>
+      <option value="Black">Black</option>
+      <option value="Asian-Pac-Islander">Asian-Pac-Islander</option>
+      <option value="Amer-Indian-Eskimo">Amer-Indian-Eskimo</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Sex">Sex:</label>
+    <select id="Sex" name="Sex">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

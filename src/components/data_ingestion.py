@@ -37,21 +37,16 @@ class DataIngestion:
             logging.info("Remove Special Cherater In Dataset")
 
             ## Capital Loss and final weight is not co-releted for  target feature.
-            df.drop(labels = ["Capital-loss" , "Final-weight"] , axis = 1  , inplace = True)
+            df.drop(labels = ["Capital_loss" , "Final_weight" , "Native_county"] , axis = 1  , inplace = True)
             # occupation "? " replace  occupation mode
             df["Occupation"].mode()
             df["Occupation"] = df["Occupation"].replace("?" , "Prof specialty")
-            # native-county "?" , replace native county mode
-            df["Native-county"].mode()
-            df["Native-county"] = df["Native-county"].replace("?" , "United States")
-
-            df["Native-county"] = df["Native-county"].replace("Outlying US(Guam USVI etc)" , "Outlying US")
-            df["Native-county"] = df["Native-county"].replace("Trinadad&Tobago" , "Trinadad Tobago")
+           
             # remove this index because this is a single group 
             df.drop(index = 19609 , axis = 0 , inplace = True)
 
             # maping income <=50K = 0 , >50K = 1
-            map_income = {" <=50K" : 0 , " >50K" : 1}
+            map_income = {"<=50K" : 0 , ">50K" : 1}
             df["Income"] = df["Income"].map(map_income)
             logging.info("Data Cleaing part is complete")
 
@@ -61,8 +56,8 @@ class DataIngestion:
 
             logging.info('Train Test Split')
             train_set , test_set = train_test_split(df , test_size=0.3 , random_state= 42)
-            train_set.to_csv(self.ingestion_config.train_data_path , index = False , header = None)
-            test_set.to_csv(self.ingestion_config.test_data_path , index = False , header = None)
+            train_set.to_csv(self.ingestion_config.train_data_path , index = False , header = True)
+            test_set.to_csv(self.ingestion_config.test_data_path , index = False , header = True)
 
             logging.info('Ingetion of data is completed')
 
