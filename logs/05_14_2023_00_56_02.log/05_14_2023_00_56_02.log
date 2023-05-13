@@ -1,0 +1,3 @@
+[ 2023-05-14 00:56:03,928 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2023-05-14 00:56:03,934 ] 186 werkzeug - INFO -  * Debugger PIN: 102-917-185
+[ 2023-05-14 00:56:32,255 ] 186 werkzeug - INFO -  * Detected change in 'c:\\incomecensus\\app.py', reloading
