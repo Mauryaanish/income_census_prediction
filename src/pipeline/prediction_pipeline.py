@@ -55,7 +55,7 @@ class CustomData:
         self.Occupation = Occupation
         self.Relationship =  Relationship
         self.Race = Race
-        self.sex = Sex
+        self.Sex = Sex
         self.Capital_gain = Capital_gain
         self.Capital_loss = Capital_loss
         self.Hours_per_week = Hours_per_week
@@ -68,12 +68,12 @@ class CustomData:
                 'Work_class':[self.Work_class],
                 'Final-weight':[self.Final_weight],
                 'Education':[self.Education],
-                'Education-num':[self.Education_num],
-                'Marital-status':[self.Marital_status],
+                'Education_num':[self.Education_num],
+                'Marital_status':[self.Marital_status],
                 'Occupation':[self.Occupation],
                 'Relationship':[self.Relationship],
                 'Race':[self.Race],
-                'sex' :[self.sex],
+                'Sex' :[self.Sex],
                 'Capital_gain' : [self.Capital_gain],
                 'Capital_loss' : [self.Capital_loss],
                 'Hours_per_week' : [self.Hours_per_week]

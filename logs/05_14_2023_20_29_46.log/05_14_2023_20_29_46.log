@@ -1,0 +1,12 @@
+[ 2023-05-14 20:29:51,687 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2023-05-14 20:29:51,719 ] 186 werkzeug - INFO -  * Debugger PIN: 102-917-185
+[ 2023-05-14 20:29:56,755 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:29:56] "GET / HTTP/1.1" 200 -
+[ 2023-05-14 20:30:04,751 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:30:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-05-14 20:30:40,692 ] 82 root - INFO - Dataframe Gathered
+[ 2023-05-14 20:30:49,131 ] 28 root - INFO - Exception occured in prediction
+[ 2023-05-14 20:30:49,450 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:30:49] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-05-14 20:30:49,685 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:30:49] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2023-05-14 20:30:49,734 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:30:49] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2023-05-14 20:30:49,909 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:30:49] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-05-14 20:30:49,994 ] 186 werkzeug - INFO - 127.0.0.1 - - [14/May/2023 20:30:49] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-05-14 20:33:11,514 ] 186 werkzeug - INFO -  * Detected change in 'c:\\incomecensus\\src\\pipeline\\prediction_pipeline.py', reloading
